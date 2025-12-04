@@ -1,23 +1,3 @@
-//using UnityEngine;
-
-//public class PickupItem : Interactable
-//{
-//    [Tooltip("Name of the item to add to inventory")]
-//    public string itemName = "Log";
-
-//    [Tooltip("Optional pickup sound")]
-//    public AudioClip pickupSound;
-
-//    public override void OnInteract()
-//    {
-//        base.OnInteract();
-//        Inventory.Instance.AddItem(itemName);
-//        if (pickupSound != null) AudioSource.PlayClipAtPoint(pickupSound, transform.position);
-//        gameObject.SetActive(false);
-//        UIManager.Instance?.ShowMessage($"{itemName} picked up!");
-//    }
-
-//}
 using UnityEngine;
 
 public class PickupItem : Interactable
