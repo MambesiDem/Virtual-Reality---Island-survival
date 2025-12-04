@@ -13,11 +13,11 @@ public class TerrainInteractable : Interactable
             Debug.Log("We're placing a stone.");
             if (Physics.Raycast(ray, out hit, 10f))
             {
-                // Optional: check if hit object is terrain
+            
                 if (hit.collider.gameObject == this.gameObject)
                 {
                     Vector3 dropPosition = hit.point;
-                    dropPosition.y += 0.1f; // Slight lift to avoid clipping
+                    dropPosition.y += 0.1f; 
                     Instantiate(stonePrefab, dropPosition, Quaternion.identity);
                 }
             }
